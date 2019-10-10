@@ -9,7 +9,7 @@ public class FacebookNotificationHandler extends NotificationHanlder {
 	@Override
 	public void handleRequest(Request request) {
 		if (RequestType.FACEBOOK.equals(request.getType())) {
-			System.out.println("Está sendo notificado via Facebook:" + request.getMessage());
+			System.out.println("Esta sendo notificado via Facebook:" + request.getMessage());
 			setHandled(true);
 		}
 		dispatch(request);

@@ -9,7 +9,7 @@ public class SmsNotificationHandler extends NotificationHanlder {
 	@Override
 	public void handleRequest(Request request) {
 		if (RequestType.SMS.equals(request.getType())) {
-			System.out.println("Está sendo notificado via SMS:" + request.getMessage());
+			System.out.println("Esta sendo notificado via SMS:" + request.getMessage());
 			setHandled(true);
 		}
 		dispatch(request);

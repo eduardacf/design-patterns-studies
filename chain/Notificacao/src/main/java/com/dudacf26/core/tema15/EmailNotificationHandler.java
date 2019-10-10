@@ -9,7 +9,7 @@ public class EmailNotificationHandler extends NotificationHanlder {
 	@Override
 	public void handleRequest(Request request) {
 		if (RequestType.EMAIL.equals(request.getType())) {
-			System.out.println("Está sendo notificado via EMAIL:" + request.getMessage());
+			System.out.println("Esta sendo notificado via EMAIL:" + request.getMessage());
 			setHandled(true);
 		}
 		dispatch(request);

@@ -1,2 +1,3 @@
-Com Interface fluente
+### Design Pattern: *Builder  *
 
+#### Categoria: *Criacional*

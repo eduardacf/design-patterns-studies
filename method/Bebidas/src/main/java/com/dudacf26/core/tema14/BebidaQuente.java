@@ -7,7 +7,7 @@ public abstract class BebidaQuente {
 	public abstract String servirBebida();
 
 	public final String entregarBebida() {
-		return ("Sua bebida está pronta para ser retirada :D");
+		return ("Sua bebida esta pronta para ser retirada :D");
 	}
 
 	public final void vendeBebida() {

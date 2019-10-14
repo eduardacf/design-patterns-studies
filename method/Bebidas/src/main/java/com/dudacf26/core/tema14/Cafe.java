@@ -1,14 +1,14 @@
 package com.dudacf26.core.tema14;
 
-public class Cha extends BebidaQuente {
+public class Cafe extends BebidaQuente {
 
 	@Override
 	public String prepararBebida() {
-		return ("Preparando o chá!");
+		return ("Preparando o cafe!");
 	}
 
 	@Override
 	public String servirBebida() {
-		return ("Servindo o chá!");
+		return ("Servindo o cafe!");
 	}
 }

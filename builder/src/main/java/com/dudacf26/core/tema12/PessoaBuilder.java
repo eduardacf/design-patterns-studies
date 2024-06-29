@@ -2,7 +2,7 @@ package com.dudacf26.core.tema12;
 
 public class PessoaBuilder {
 
-	private Pessoa pessoa;
+	private final Pessoa pessoa;
 
 	public PessoaBuilder() {
 		this.pessoa = new Pessoa();

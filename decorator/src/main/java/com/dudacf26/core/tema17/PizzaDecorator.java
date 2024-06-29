@@ -2,7 +2,7 @@ package com.dudacf26.core.tema17;
 
 public class PizzaDecorator implements Pizza {
 	
-	private Pizza pizza;
+	private final Pizza pizza;
 
 	public PizzaDecorator(Pizza pizza) {
 		super();

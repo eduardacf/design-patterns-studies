@@ -33,5 +33,4 @@ public class Pessoa {
 	public String toString() {
 		return "Pessoa \n" + "Nome:" + nome + "Data de Nascimento:" + dataDeNascimento + "Endereço" + endereco + ":D";
 	}
-
 }

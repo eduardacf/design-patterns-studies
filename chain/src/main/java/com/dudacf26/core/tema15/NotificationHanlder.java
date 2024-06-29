@@ -4,10 +4,10 @@ import java.util.Objects;
 
 public abstract class NotificationHanlder {
 
-	private NotificationHanlder next;
+	private final NotificationHanlder next;
 	private Boolean handled = false;
 
-	public NotificationHanlder(NotificationHanlder next) {
+	protected NotificationHanlder(NotificationHanlder next) {
 		this.next = next;
 	}
 
@@ -19,8 +19,8 @@ public abstract class NotificationHanlder {
 		}
 	}
 
-	protected void setHandled(Boolean handled) {
-		this.handled = handled;
+	protected void setHandled() {
+		this.handled = true;
 	}
 
 	public Boolean isHandled() {

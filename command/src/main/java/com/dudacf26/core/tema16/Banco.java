@@ -5,19 +5,17 @@ import java.util.List;
 
 public class Banco {
 
-	private int saldo;
-	private List<Operacao> operacoes = new ArrayList<Operacao>();
+    private int saldo;
+    private final List<Operacao> operacoes = new ArrayList<Operacao>();
 
+    public void receberOperacao(Operacao solicitacao) {
+        operacoes.add(solicitacao);
+    }
 
-	public void receberOperacao(Operacao solicitacao) {
-		operacoes.add(solicitacao);
-	}
-
-	public int consultarSaldo() {
-		for (Operacao operacao : operacoes) {
-			saldo += operacao.executar();
-		}
-		return saldo;
-
-	}
+    public int consultarSaldo() {
+        for (Operacao operacao : operacoes) {
+            saldo += operacao.executar();
+        }
+        return saldo;
+    }
 }

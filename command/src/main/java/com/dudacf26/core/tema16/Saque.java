@@ -2,7 +2,6 @@ package com.dudacf26.core.tema16;
 
 public class Saque implements Operacao {
 	private int valor;
-
 	public Saque(int valor) {
 		this.valor -= valor;
 	}
@@ -19,5 +18,4 @@ public class Saque implements Operacao {
 	public int executar() {
 		return valor;
 	}
-
 }
